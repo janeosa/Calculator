@@ -27,7 +27,8 @@ nav {
   text-align: center;
 }
 table {
-  border: 0.1em solid #739cc4;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   border-collapse: collapse;
   width: 600px;
   height: 600px;
@@ -37,6 +38,8 @@ table {
 }
 
 caption {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   padding-top: 20px;
   border: 0.1em solid #739cc4;
   font-size: 1.5em;
@@ -50,7 +53,6 @@ caption input {
 
 th,
 td {
-  border: 0.1em solid #739cc4;
   padding: 0.5em;
   text-align: center;
 }
