@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator by Jane Ighodaro</title>
   </head>
   <body>
     <header></header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="calculator.html">Calculator</a>
+      <a href="index.html">Refresh</a>
     </nav>
     <main>
+      <h1>Calculator</h1>
+
       <table>
         <caption>
           <input id="result" type="text" value="0" readonly />
@@ -71,7 +79,9 @@
           <td>
             <input id="five" value="5" type="button" onclick="input(5)" />
           </td>
-          <td><input id="six" value="6" type="button" onclick="input(6)" /></td>
+          <td>
+            <input id="six" value="6" type="button" onclick="input(6)" />
+          </td>
           <td>
             <input
               id="subtract"
@@ -82,8 +92,12 @@
           </td>
         </tr>
         <tr>
-          <td><input id="one" value="1" type="button" onclick="input(1)" /></td>
-          <td><input id="two" value="2" type="button" onclick="input(2)" /></td>
+          <td>
+            <input id="one" value="1" type="button" onclick="input(1)" />
+          </td>
+          <td>
+            <input id="two" value="2" type="button" onclick="input(2)" />
+          </td>
           <td>
             <input id="three" value="3" type="button" onclick="input(3)" />
           </td>
@@ -122,6 +136,12 @@
         </tr>
       </table>
     </main>
-    <footer></footer>
+    <footer>
+      This Project was coded by
+      <a href="https://github.com/janeosa" target="_blank">Jane Ighodaro</a> ,
+      is open sourced on
+      <a href="https://github.com/janeosa/Calculator">Github</a> and hosted on
+      <a href="https://calculator-by-jane-ighodaro.netlify.app/">Netlify</a> .
+    </footer>
   </body>
 </html>

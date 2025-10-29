@@ -1,0 +1,104 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgb(246, 249, 254) -16.9%,
+    rgb(186, 206, 243) 119.9%
+  );
+}
+a {
+  color: #739cc4;
+}
+
+a:hover {
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+table {
+  border: 0.1em solid #739cc4;
+  border-collapse: collapse;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #739cc4;
+}
+
+caption {
+  padding-top: 20px;
+  border: 0.1em solid #739cc4;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #739cc4;
+}
+caption input {
+  text-align: right;
+  width: 92%;
+}
+
+th,
+td {
+  border: 0.1em solid #739cc4;
+  padding: 0.5em;
+  text-align: center;
+}
+
+input {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  width: 95%;
+  height: 2.5em;
+  font-size: 24px;
+}
+
+/* Begin Mobile */
+@media screen and (max-width: 640px) {
+  table {
+    width: 85%;
+    height: 85%;
+  }
+  th,
+  td {
+    border: 0.1em solid #739cc4;
+    text-align: center;
+  }
+}
+input {
+  font-size: 24px;
+}
+
+caption input {
+  text-align: right;
+  width: 93%;
+}
+
+footer {
+  font-size: 14px;
+}
+
+/* End Mobile */
+
+/* Begin Tablet */
+@media screen and (min-width: 641px) {
+  input {
+    width: 75%;
+    height: 3em;
+    font-size: 28px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
+/* End Tablet */
