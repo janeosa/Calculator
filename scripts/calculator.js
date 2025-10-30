@@ -1,4 +1,12 @@
+function equivalentCheck() {
+  //This allows the last value to remain in view until other buttons are pressed
+  if (parseInt(document.getElementById("equivalent").value))
+    document.getElementById("equivalent").value = 0;
+  document.getElementById("result").value = 0;
+}
+
 function input(x) {
+  equivalentCheck();
   if (document.getElementById("result").value == 0) {
     // This checks the zero and gets rid of it when we enter a number for the first time
     document.getElementById("result").value = x;
@@ -11,7 +19,8 @@ function operandCheck() {
   if (document.getElementById("operand").value == "") {
     document.getElementById("operand").value =
       document.getElementById("result").value;
-    document.getElementById("result").value = 0; // This is temporary
+
+    document.getElementById("equivalent").value = 1;
   } else {
     operatorCheck();
   }
@@ -41,6 +50,7 @@ function operatorCheck() {
 
   document.getElementById("operand").value = a;
   document.getElementById("result").value = a;
+  document.getElementById("equivalent").value = 1;
 }
 
 function operators(x) {
@@ -67,12 +77,14 @@ function equals() {
   document.getElementById("result").value =
     document.getElementById("operand").value;
   document.getElementById("operand").value = "";
+  document.getElementById("equivalent").value = 1;
 }
 
 function allClear() {
   document.getElementById("result").value = 0;
   document.getElementById("operand").value = "";
   document.getElementById("operation").value = 0;
+  document.getElementById("equivalent").value = 0;
 }
 
 function plusminus() {
