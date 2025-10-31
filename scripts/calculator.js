@@ -9,36 +9,19 @@ function equivalentCheck() {
 function input(x) {
   equivalentCheck();
 
-  let y = parseFloat(document.getElementById("result").value);
-
-  if (document.getElementById("decimalVar").value == 0) {
-    x += y * 10; //Multiply the text input by 10 and add the value of x.
-    document.getElementById("result").value = x; //Return x to the text output.
+  let currentDisplay = document.getElementById("result").value;
+  if (currentDisplay === "0") {
+    document.getElementById("result").value = x;
   } else {
-    //If decimal is true
-
-    let decimalCount = parseInt(document.getElementById("decimalVar").value);
-
-    if (decimalCount == 1) {
-      x *= 1 / 10; //We are using Math to place the decimal point
-      y += x;
-      document.getElementById("result").value = y;
-    } else {
-      document.getElementById("result").value += x;
-    }
-    decimalCount++;
     document.getElementById("result").value += x;
   }
 }
 
 function decimalPoint() {
-  if (document.getElementById("decimalVar").value == 0) {
-    //this prevents multiple decimal points
-    document.getElementById("decimalVar").value = 1;
-  }
-  if (parseInt(document.getElementById("operation").value)) {
-    //If this is an empty string , it will return false.
-    document.getElementById("decimalVar").value = 0;
+  equivalentCheck();
+  let currentDisplay = document.getElementById("result").value;
+  if (!currentDisplay.includes(".")) {
+    document.getElementById("result").value += ".";
   }
 }
 
@@ -112,7 +95,6 @@ function allClear() {
   document.getElementById("operand").value = "";
   document.getElementById("operation").value = 0;
   document.getElementById("equivalent").value = 0;
-  document.getElementById("decimalVar").value = 0;
 }
 
 function plusminus() {
