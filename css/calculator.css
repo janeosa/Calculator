@@ -48,7 +48,7 @@ caption {
 }
 caption input {
   text-align: right;
-  width: 92%;
+  width: 93%;
 }
 
 th,
@@ -78,7 +78,6 @@ input:hover {
   }
   th,
   td {
-    /*border: 0.1em solid #739cc4;*/
     text-align: center;
   }
 }
@@ -89,7 +88,7 @@ input {
 
 caption input {
   text-align: right;
-  width: 93%;
+  width: 89%;
 }
 
 footer {
