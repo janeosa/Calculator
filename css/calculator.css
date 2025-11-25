@@ -78,7 +78,7 @@ input:hover {
   }
   th,
   td {
-    border: 0.1em solid #739cc4;
+    /*border: 0.1em solid #739cc4;*/
     text-align: center;
   }
 }
